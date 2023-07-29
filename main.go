@@ -1,7 +1,7 @@
 package main
 
 import (
-	"golesson/linkedlists"
+	stacksqueues "golesson/stacks_queues"
 )
 
 func main() {
@@ -9,5 +9,8 @@ func main() {
 
 	//heaps.Demo1()
 
-	linkedlists.Demo1()
+	//linkedlists.Demo1()
+
+	//stacksqueues.Demo1()
+	stacksqueues.Demo2()
 }
