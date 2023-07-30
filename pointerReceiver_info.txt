@@ -1,0 +1,31 @@
+package godatastructures
+ 
+In Go, methods are functions associated with a particular type, known as the method receiver type. A receiver acts like an argument to the method, 
+allowing the method to be called on a specific instance of the receiver type. Receivers can be of two types: value receivers and pointer receivers.
+
+A pointer receiver is a method receiver that takes a pointer to the receiver type. It is denoted by placing an asterisk (*) before the type name in the receiver definition. 
+Here's the general syntax for a pointer receiver. 
+
+type MyType struct {
+    // fields of MyType
+}
+
+// Pointer receiver method 
+func (m *MyType) methodName() {
+    // Method implementation
+}
+
+In the above example, 'MyType is a user-defined type, and the method 'methodName' is defined with a pointer receiver. 
+This means that the method can be called on a pointer to 'MyType', like so:
+
+myInstance := &MyType{}
+myInstance.methodName()
+
+When we call a method with a pointer receiver, Go aouomatically dereferences the pointer for us, allowing us to acces and modify the fields of the originally instance directly. 
+
+The primary advantage of using a pointer receiver is that allows us to modify the receiver's state within the method and have those changes reflected in the original instance.
+If we use a value receiver instead, modification made to the receiver within the method would only affect the method's local copy, and the original instance wouldn't be modified.
+
+It's wourth noting that using a pointer receiver is particularly useful when we have large receiver types or when we want to modify the receiver's state within the method.
+Howewer, if our receiver type is small and we don't need to modify its state, 
+we can use a value receiver to avoid the overhead of working with pointers. 

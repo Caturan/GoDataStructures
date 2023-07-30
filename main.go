@@ -1,7 +1,7 @@
 package main
 
 import (
-	stacksqueues "golesson/stacks_queues"
+	"golesson/binarysearchtree"
 )
 
 func main() {
@@ -12,5 +12,9 @@ func main() {
 	//linkedlists.Demo1()
 
 	//stacksqueues.Demo1()
-	stacksqueues.Demo2()
+	//stacksqueues.Demo2()
+
+	//binarysearchtree.Demo1()
+	binarysearchtree.Demo2()
+
 }
