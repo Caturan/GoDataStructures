@@ -1,7 +1,7 @@
 package main
 
 import (
-	"golesson/binarysearchtree"
+	"golesson/tries"
 )
 
 func main() {
@@ -15,6 +15,8 @@ func main() {
 	//stacksqueues.Demo2()
 
 	//binarysearchtree.Demo1()
-	binarysearchtree.Demo2()
+	//binarysearchtree.Demo2()
+
+	tries.Demo1()
 
 }
