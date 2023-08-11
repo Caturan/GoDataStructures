@@ -4,7 +4,7 @@ package tries
 	Tries is a tree structure. It is mostly use for store to words.
 	Each node a part of word(letter). By connecting in a path from to root.
 	Each node can have 26 (alphabet) children. So each node in a triess can be look like array.
-	Each node connect each toher with the pointers.
+	Each node connect each other with the pointers.
 	 And a parent is a array and array size is 26. But it is point just some letters in the array.
 	 So what about the rest of letters. They have nil point. Dont have an adrees for that parent.
 
